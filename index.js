@@ -1,14 +1,20 @@
 'use strict';
 
-const {transform} = require('@babel/core');
+const {transformSync} = require('@babel/core');
 const wrapper = require('./lib/wrapper');
 
 
 module.exports = {
   process(src, filename, config, options) {
-    const result = transform(wrapper.wrapSource(src), {
-      filename
+    const wrappedSrc = wrapper.wrapSource(src, filename)
+    const { code, map } = transformSync(wrappedSrc.code, {
+      filename,
+      sourceMaps: true
     });
-    return result ? result.code : src;
+    console.log(code)
+    return {
+      code,
+      map: map
+    };
   },
 };
