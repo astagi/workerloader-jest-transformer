@@ -1,16 +1,23 @@
 {
   "name": "workerloader-jest-transformer",
   "version": "0.0.0",
-  "description": "Jest transformer for Worker loader",
+  "description": "Jest transformer for Webpack Worker loader",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "jest --config jest.config.js --no-cache"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/astagi/workerloader-jest-transformer.git"
   },
   "keywords": [
     "jest",
-    "worker"
+    "worker",
+    "utility",
+    "testing",
+    "tool",
+    "transformer",
+    "tdd"
   ],
   "author": "Andrea Stagi <stagi.andrea@gmail.com>",
   "license": "MIT",
@@ -23,5 +30,10 @@
   },
   "dependencies": {
     "mitt": "^2.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.2"
   }
 }

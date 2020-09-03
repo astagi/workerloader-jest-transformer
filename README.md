@@ -1,4 +1,4 @@
-![Build Status](https://travis-ci.org/astagi/workerloader-jest-transformer.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/github/astagi/workerloader-jest-transformer/badge.svg?branch=master)](https://coveralls.io/github/astagi/workerloader-jest-transformer?branch=master)
+[![npm-version](https://img.shields.io/npm/v/workerloader-jest-transformer.svg)](https://www.npmjs.com/package/workerloader-jest-transformer) [![Build Status](https://travis-ci.org/astagi/workerloader-jest-transformer.svg?branch=master)](https://travis-ci.org/astagi/workerloader-jest-transformer) [![codecov](https://codecov.io/gh/astagi/workerloader-jest-transformer/branch/master/graph/badge.svg)](https://codecov.io/gh/astagi/workerloader-jest-transformer) [![license](https://img.shields.io/npm/l/express.svg)]()
 
 ## workerloader-jest-transformer
 

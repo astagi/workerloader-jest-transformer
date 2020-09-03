@@ -6,7 +6,7 @@ const stripper = require('./stripper');
 
 
 module.exports = {
-  wrapSource(src, filename) {
+  wrapSource(src) {
     const worker = fs.readFileSync(
       path.resolve(__dirname, '..', 'templates', 'worker.js'),
       {encoding:'utf8', flag:'r'}
