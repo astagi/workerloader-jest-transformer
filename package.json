@@ -22,9 +22,9 @@
   "author": "Andrea Stagi <stagi.andrea@gmail.com>",
   "license": "MIT",
   "files": [
-    "lib",
-    "templates",
-    "utils",
+    "lib/*.js",
+    "templates/*.js",
+    "utils/*.js",
     "index.js"
   ],
   "bugs": {
