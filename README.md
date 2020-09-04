@@ -20,8 +20,8 @@ npm install workerloader-jest-transformer --save-dev
 
 ```js
 {
-    "transform": {
-        "^.+\\.worker.js$": "workerloader-jest-transformer"
-    }
+  "transform": {
+    "^.+\\.worker.js$": "workerloader-jest-transformer"
+  }
 }
 ```
