@@ -3,9 +3,9 @@ import path from 'path'
 import { stripImports } from '../stripper';
 
 
-describe('Stripper module', function() {
+describe('Stripper module', () => {
   describe('stripImports', () => {
-    it('should separate imports and code', function() {
+    it('should separate imports and code', () => {
       const src = fs.readFileSync(
         path.resolve(__dirname, 'code', 'myworker.js'),
         {encoding:'utf8', flag:'r'}
