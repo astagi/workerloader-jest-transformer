@@ -21,6 +21,12 @@
   ],
   "author": "Andrea Stagi <stagi.andrea@gmail.com>",
   "license": "MIT",
+  "files": [
+    "lib",
+    "templates",
+    "utils",
+    "index.js"
+  ],
   "bugs": {
     "url": "https://github.com/astagi/workerloader-jest-transformer/issues"
   },
