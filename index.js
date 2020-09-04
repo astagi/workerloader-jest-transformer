@@ -1,18 +1,13 @@
 'use strict';
 
-const {transformSync} = require('@babel/core');
+
+const babelJest = require('babel-jest');
 const wrapper = require('./utils/wrapper');
+
 
 module.exports = {
   process(src, filename, config, options) {
     const wrappedSrc = wrapper.wrapSource(src, filename)
-    const { code, map } = transformSync(wrappedSrc, {
-      filename,
-      sourceMaps: true
-    });
-    return {
-      code,
-      map
-    };
+    return babelJest.process(wrappedSrc, filename, config, { ...options, instrument: false });
   },
 };
