@@ -6,16 +6,16 @@ const wrapper = require('./utils/wrapper');
 
 module.exports = {
   process(src, filename, config, options) {
-    let lang = 'js'
+    let lang
+    let transformer
     if (/^.+\.[t]sx?$/.test(filename)) {
       lang = 'ts'
-      console.log('TYPE')
+      transformer = require('ts-jest')
+    } else {
+      lang = 'js'
+      transformer = require('babel-jest')
     }
     const wrappedSrc = wrapper.wrapSource(src, lang)
-    if (lang == 'js') {
-      return require('babel-jest').process(wrappedSrc, filename, config, { ...options, instrument: false });
-    } else {
-      return require('ts-jest').process(wrappedSrc, filename, config, { ...options, instrument: false });
-    }
+    return transformer.process(wrappedSrc, filename, config, { ...options, instrument: false });
   },
 };

@@ -1,4 +1,3 @@
-// @ts-ignore
 import BaseWorker from 'workerloader-jest-transformer/lib/baseworker'
 /* {% WORKER_IMPORTS %} */
 
