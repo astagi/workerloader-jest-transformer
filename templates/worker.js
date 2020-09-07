@@ -3,7 +3,7 @@ import BaseWorker from 'workerloader-jest-transformer/lib/baseworker'
 
 export default class Worker extends BaseWorker {
 
-  main(addEventListener, removeEventListener, dispatchEvent, postMessage, terminate) {
+  main(self, addEventListener, removeEventListener, dispatchEvent, postMessage, terminate) {
     /* {% WORKER_CODE %} */
     return onmessage
   }
