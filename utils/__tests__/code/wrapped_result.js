@@ -1,9 +1,9 @@
 import BaseWorker from 'workerloader-jest-transformer/lib/baseworker'
 import workerHandler from './handlers'
 
-export default class Worker extends BaseWorker {
+export default class WebWorker extends BaseWorker {
 
-  main(addEventListener, removeEventListener, dispatchEvent, postMessage, terminate) {
+  main(self, addEventListener, removeEventListener, dispatchEvent, postMessage, terminate) {
     
     
     workerHandler('data')
