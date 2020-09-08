@@ -1,6 +1,6 @@
 {
   "name": "workerloader-jest-transformer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Jest transformer for Webpack Worker loader",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,9 @@
   "license": "MIT",
   "files": [
     "lib/*.js",
+    "lib/*.ts",
     "templates/*.js",
+    "templates/*.ts",
     "utils/*.js",
     "index.js"
   ],
