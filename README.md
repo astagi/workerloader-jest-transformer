@@ -14,6 +14,12 @@ This transformer helps you to use [Jest](https://facebook.github.io/jest/) testi
 npm install workerloader-jest-transformer --save-dev
 ```
 
+or
+
+```sh
+yarn add workerloader-jest-transformer --dev
+```
+
 ### Setting up Jest config file
 
 `workerloader-jest-transformer` must be used in your Jest config file like this:
