@@ -8,7 +8,7 @@ export default class WebWorker extends BaseWorker {
     
     workerHandler('data')
     
-    return onmessage
+    return onmessage || self.onmessage
   }
 
 }

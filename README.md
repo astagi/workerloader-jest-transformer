@@ -26,7 +26,7 @@ yarn add workerloader-jest-transformer --dev
 
 ```js
 {
-  "transform": {
+  transform: {
     "^.+\\.worker.[t|j]sx?$": "workerloader-jest-transformer"
   }
 }
