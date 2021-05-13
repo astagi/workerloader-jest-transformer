@@ -10,12 +10,12 @@ describe('Wrapper module', () => {
         path.resolve(__dirname, 'code', 'myworker.js'),
         {encoding:'utf8', flag:'r'}
       );
-      const desideredWrappedSrc = fs.readFileSync(
+      const desiredWrappedSrc = fs.readFileSync(
         path.resolve(__dirname, 'code', 'wrapped_result.js'),
         {encoding:'utf8', flag:'r'}
       );
       const wrappedSrc = wrapSource(src)
-      expect(wrappedSrc).toEqual(desideredWrappedSrc)
+      expect(wrappedSrc).toEqual(desiredWrappedSrc)
     });
   });
 });
