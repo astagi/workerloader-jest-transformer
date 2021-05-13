@@ -7,9 +7,12 @@ module.exports = {
 
     const imports = []
 
-    src.match(importsRe).map((match) => {
-      imports.push(match)
-    })
+    const match = src.match(importsRe)
+    if(match) {
+      src.match(importsRe).map((match) => {
+        imports.push(match)
+      })
+    }
 
     return {
       code: src.replace(importsRe, ''),
