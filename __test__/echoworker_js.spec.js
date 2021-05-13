@@ -1,7 +1,7 @@
 
-import EchoWorker from './echoworker.worker.ts';
+import EchoWorker from './echoworker_js.worker';
 
-describe('EchoWorker (TypeScript)', () => {
+describe('EchoWorker', () => {
   it('can execute WebWorker', async () => {
     const worker = new EchoWorker();
     await new Promise((resolve, reject) => {
