@@ -6,6 +6,7 @@ module.exports = {
     "utils/*.js", "lib/*.js",
   ],
   transform: {
+    '^.+\\.worker.[t|j]sx?$': './index.js',
     "^.+\\.[jt]s?$": "babel-jest"
   },
   testPathIgnorePatterns: [
