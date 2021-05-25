@@ -22,6 +22,7 @@
   "author": "Andrea Stagi <stagi.andrea@gmail.com>",
   "license": "MIT",
   "files": [
+    "@types/*.d.ts",
     "lib/*.js",
     "lib/*.ts",
     "templates/*.js",
