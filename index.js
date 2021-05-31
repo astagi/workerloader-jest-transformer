@@ -1,6 +1,5 @@
 'use strict';
 
-
 const wrapper = require('./utils/wrapper');
 
 
@@ -16,6 +15,6 @@ module.exports = {
       transformer = require('babel-jest')
     }
     const wrappedSrc = wrapper.wrapSource(src, lang)
-    return transformer.process(wrappedSrc, filename, config, { ...options, instrument: false });
+    return transformer.createTransformer().process(wrappedSrc, filename, config, { ...options, instrument: false });
   },
 };
