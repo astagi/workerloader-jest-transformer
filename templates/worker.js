@@ -5,7 +5,7 @@ export default class WebWorker extends BaseWorker {
 
   main(self, addEventListener, removeEventListener, dispatchEvent, postMessage, terminate) {
     /* {% WORKER_CODE %} */
-    return onmessage || self.onmessage
+    return typeof onmessage !== 'undefined' ? onmessage : self.onmessage
   }
 
 }
