@@ -3,7 +3,7 @@ import workerHandler from './handlers'
 
 export default class WebWorker extends BaseWorker {
 
-  main(self, addEventListener, removeEventListener, dispatchEvent, postMessage, terminate) {
+  main(self, addEventListener, removeEventListener, dispatchEvent, postMessage, close) {
     
     
     workerHandler('data')
