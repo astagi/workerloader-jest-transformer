@@ -5,13 +5,12 @@
 
 ## A Jest transformer for Webpack worker-loader
 
+This transformer helps you to use [Jest](https://facebook.github.io/jest/) with [Webpack worker-loader module](https://github.com/webpack-contrib/worker-loader). Inspired by [jsdom-worker](https://github.com/developit/jsdom-worker)
+
+### Warnings and help wanted❗️
 ⚠️ This transformer is highly experimental. Any contribution and advice would be greatly appreciated!
 
-This transformer helps you to use [Jest](https://facebook.github.io/jest/) testing with [Webpack worker-loader module](https://github.com/webpack-contrib/worker-loader). Inspired by [jsdom-worker](https://github.com/developit/jsdom-worker)
-
-## Help wanted❗️
-
-I need help maintaining this project. [Send me a DM on Twitter](https://twitter.com/4stagi) if you want to become a maintainer.
+📣 I need help maintaining this project. [Send me a DM on Twitter](https://twitter.com/4stagi) if you want to become a maintainer.
 
 ### Install
 
