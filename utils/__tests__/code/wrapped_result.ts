@@ -1,10 +1,13 @@
 import BaseWorker from 'workerloader-jest-transformer/lib/baseworker'
-/* {% WORKER_IMPORTS %} */
+import workerHandler from './handlers'
 
 export default class WebWorker extends BaseWorker {
 
   main(self: any, addEventListener: any, removeEventListener: any, dispatchEvent: any, postMessage: any, close: any) {
-    /* {% WORKER_CODE %} */
+    
+    
+    workerHandler('data')
+    
     return typeof onmessage !== 'undefined' ? onmessage : self.onmessage
   }
 
